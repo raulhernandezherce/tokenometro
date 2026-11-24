@@ -8,7 +8,7 @@ description: Analiza cuántos tokens ha gastado Claude Code en este equipo (por 
 1. Ejecuta el analizador (solo lee archivos locales, no llama a ninguna API):
 
    ```bash
-   python3 "${CLAUDE_PLUGIN_ROOT}/claude_token_audit/auditoria.py" --dias 7
+   python3 "${CLAUDE_PLUGIN_ROOT}/tokenometro/auditoria.py" --dias 7
    ```
 
    Opciones útiles: `--dias 0` (todo el historial), `--proyecto <nombre>`, `--json`.

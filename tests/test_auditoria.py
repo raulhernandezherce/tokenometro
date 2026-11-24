@@ -5,7 +5,7 @@ from contextlib import redirect_stderr, redirect_stdout
 from datetime import datetime, timezone
 from pathlib import Path
 
-from claude_token_audit.auditoria import (
+from tokenometro.auditoria import (
     analizar, cargar_precios, coste, informe_json, informe_texto, leer_llamadas, main, precio_de,
 )
 

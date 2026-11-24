@@ -3,7 +3,7 @@ requires = ["setuptools>=68"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "claude-token-audit"
+name = "tokenometro"
 version = "1.0.0"
 description = "Audita cuántos tokens gasta Claude Code, cuánto costaría por API y dónde ahorrar."
 readme = "README.md"
@@ -13,10 +13,10 @@ authors = [{name = "Raúl Hernández Herce"}]
 keywords = ["claude", "claude-code", "tokens", "cost", "anthropic"]
 
 [project.scripts]
-claude-token-audit = "claude_token_audit.auditoria:main"
+tokenometro = "tokenometro.auditoria:main"
 
 [tool.setuptools]
-packages = ["claude_token_audit"]
+packages = ["tokenometro"]
 
 [tool.setuptools.package-data]
-claude_token_audit = ["precios.json"]
+tokenometro = ["precios.json"]

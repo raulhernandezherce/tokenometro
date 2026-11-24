@@ -1,9 +1,9 @@
 {
-  "name": "claude-token-audit",
+  "name": "tokenometro",
   "version": "1.0.0",
   "description": "Audita el consumo de tokens de Claude Code y propone cómo ahorrar.",
   "author": {"name": "Raúl Hernández Herce", "url": "https://github.com/raulhernandezherce"},
-  "repository": "https://github.com/raulhernandezherce/claude-token-audit",
+  "repository": "https://github.com/raulhernandezherce/tokenometro",
   "license": "MIT",
   "keywords": ["tokens", "coste", "optimización", "caché"]
 }

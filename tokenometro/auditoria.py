@@ -323,7 +323,7 @@ def _tabla(titulo: str, grupos: dict[str, Grupo], top: int, ordenar_por_clave: b
 def informe_texto(inf: Informe, top: int = 10) -> str:
     t = inf.total
     lineas = [
-        "claude-token-audit · consumo de Claude Code",
+        "tokenometro · consumo de Claude Code",
         "═" * 60,
         f"Llamadas al modelo   {t.llamadas:,}",
         f"Tokens leídos        {_k(t.leidos)}  (caché: {_k(t.cache_read)} lecturas, {_k(t.cache_escritura)} escrituras)",
@@ -356,7 +356,7 @@ def informe_json(inf: Informe) -> dict:
 
 def main(argv: list[str] | None = None) -> int:
     p = argparse.ArgumentParser(
-        prog="claude-token-audit",
+        prog="tokenometro",
         description="Audita cuántos tokens gasta Claude Code y dónde puedes ahorrar.",
     )
     p.add_argument("--dir", type=Path, default=None, help="carpeta de proyectos (por defecto ~/.claude/projects)")

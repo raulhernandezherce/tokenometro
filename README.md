@@ -1,16 +1,16 @@
 <div align="center">
 
-# 💸 claude-token-audit
+# 💸 tokenómetro
 
 **¿En qué se te van los tokens de Claude Code? Descúbrelo en 1 segundo y recibe consejos concretos para gastar menos.**
 
-![tests](https://github.com/raulhernandezherce/claude-token-audit/actions/workflows/tests.yml/badge.svg)
+![tests](https://github.com/raulhernandezherce/tokenometro/actions/workflows/tests.yml/badge.svg)
 ![Claude Code plugin](https://img.shields.io/badge/Claude_Code-plugin-D97757)
 ![Python](https://img.shields.io/badge/python-3.10+-3776AB?logo=python&logoColor=white)
 ![dependencias](https://img.shields.io/badge/dependencias-0-39FF88)
 ![100% local](https://img.shields.io/badge/100%25-local-blue)
 
-<img src="img/demo.svg" alt="Salida de claude-token-audit" width="760">
+<img src="img/demo.svg" alt="Salida de tokenometro" width="760">
 
 </div>
 
@@ -27,15 +27,15 @@ Los vídeos de "cómo ahorrar tokens en Claude Code" repiten los mismos trucos: 
 ## Uso
 
 ```bash
-pipx install git+https://github.com/raulhernandezherce/claude-token-audit
-claude-token-audit
+pipx install git+https://github.com/raulhernandezherce/tokenometro
+tokenometro
 ```
 
 O sin instalar nada:
 
 ```bash
-git clone https://github.com/raulhernandezherce/claude-token-audit
-python3 claude-token-audit/claude_token_audit/auditoria.py --dias 7
+git clone https://github.com/raulhernandezherce/tokenometro
+python3 tokenometro/tokenometro/auditoria.py --dias 7
 ```
 
 | Opción | Qué hace |
@@ -49,11 +49,11 @@ python3 claude-token-audit/claude_token_audit/auditoria.py --dias 7
 ### Como plugin de Claude Code
 
 ```
-/plugin marketplace add raulhernandezherce/claude-token-audit
+/plugin marketplace add raulhernandezherce/tokenometro
 ```
 
 ```
-/plugin install claude-token-audit@claude-token-audit
+/plugin install tokenometro@tokenometro
 ```
 
 Después pregunta *"¿cuánto he gastado esta semana?"* o *"¿por qué se me acaba el límite?"*: la skill `auditar-tokens` ejecuta el análisis y te explica qué cambiar.
@@ -65,7 +65,7 @@ Después pregunta *"¿cuánto he gastado esta semana?"* o *"¿por qué se me aca
 | Tokens leídos / generados | Normalmente se lee **cientos de veces** más de lo que se genera: el coste está en el contexto |
 | Acierto de caché | Por debajo del 90 % algo está rompiendo la caché |
 | Contexto medio y máximo por sesión | Detecta sesiones que arrastran un historial enorme en cada llamada |
-| Coste equivalente por API | Estimación con [`precios.json`](claude_token_audit/precios.json) (editable). Con Pro o Max no lo pagas así, pero sirve para comparar |
+| Coste equivalente por API | Estimación con [`precios.json`](tokenometro/precios.json) (editable). Con Pro o Max no lo pagas así, pero sirve para comparar |
 | Subagentes | Cuánto trabajo delegas a modelos más baratos |
 
 Desglosado **por día, proyecto, modelo y sesión**.

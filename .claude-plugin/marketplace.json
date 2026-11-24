@@ -1,7 +1,14 @@
 {
-  "name": "claude-token-audit",
-  "owner": {"name": "Raúl Hernández Herce"},
+  "name": "tokenometro",
+  "description": "Auditoría de tokens y costes de Claude Code, 100% local.",
+  "owner": {
+    "name": "Raúl Hernández Herce"
+  },
   "plugins": [
-    {"name": "claude-token-audit", "source": "./", "description": "Audita el consumo de tokens de Claude Code y propone cómo ahorrar."}
+    {
+      "name": "tokenometro",
+      "source": "./",
+      "description": "Audita el consumo de tokens de Claude Code y propone cómo ahorrar."
+    }
   ]
 }
