@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "claude-token-audit"
+version = "1.0.0"
+description = "Audita cuántos tokens gasta Claude Code, cuánto costaría por API y dónde ahorrar."
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.10"
+authors = [{name = "Raúl Hernández Herce"}]
+keywords = ["claude", "claude-code", "tokens", "cost", "anthropic"]
+
+[project.scripts]
+claude-token-audit = "claude_token_audit.auditoria:main"
+
+[tool.setuptools]
+packages = ["claude_token_audit"]
+
+[tool.setuptools.package-data]
+claude_token_audit = ["precios.json"]

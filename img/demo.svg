@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="490" viewBox="0 0 860 490">
+<rect width="860" height="490" rx="12" fill="#0d1117"/>
+<circle cx="22" cy="20" r="6" fill="#ff5f57"/><circle cx="42" cy="20" r="6" fill="#febc2e"/><circle cx="62" cy="20" r="6" fill="#28c840"/>
+<text x="430.0" y="25" fill="#8b949e" font-family="Menlo,Consolas,monospace" font-size="13" text-anchor="middle">claude-token-audit</text>
+<g font-family="Menlo,Consolas,DejaVu Sans Mono,monospace" font-size="14" xml:space="preserve">
+<text x="22" y="52" fill="#8b949e">$ claude-token-audit --dias 7</text>
+<text x="22" y="74" fill="#e6edf3">claude-token-audit · consumo de Claude Code</text>
+<text x="22" y="96" fill="#30363d">════════════════════════════════════════════════</text>
+<text x="22" y="118" fill="#e6edf3">Llamadas al modelo   2,841</text>
+<text x="22" y="140" fill="#e6edf3">Tokens leídos        612.4M  (caché: 598.1M lecturas, 11.2M escrituras)</text>
+<text x="22" y="162" fill="#e6edf3">Tokens generados     1.9M</text>
+<text x="22" y="184" fill="#3fb950">Acierto de caché     97.7%</text>
+<text x="22" y="206" fill="#f0883e">Coste equivalente    214.38 $</text>
+<text x="22" y="250" fill="#d2a8ff">Por modelo</text>
+<text x="22" y="272" fill="#e6edf3">claude-opus-5-5     201.90 $  572.0M leídos  caché 98%  ████████████████████████</text>
+<text x="22" y="294" fill="#e6edf3">claude-sonnet-5-5    10.12 $   31.8M leídos  caché 95%  █▌</text>
+<text x="22" y="316" fill="#e6edf3">claude-haiku-5-5      2.36 $    8.6M leídos  caché 91%  </text>
+<text x="22" y="360" fill="#d2a8ff">Consejos</text>
+<text x="22" y="382" fill="#f0883e">• 6 sesiones trabajan con más de 150 k tokens por llamada:</text>
+<text x="22" y="404" fill="#e6edf3">  usa /compact al cerrar cada subtarea o /clear al cambiar de tema.</text>
+<text x="22" y="426" fill="#f0883e">• El 94 % del coste es claude-opus-5-5 y casi no usas subagentes:</text>
+<text x="22" y="448" fill="#e6edf3">  delega búsquedas y tests a Haiku o Sonnet.</text>
+</g>
+</svg>

@@ -1,0 +1,7 @@
+{
+  "name": "claude-token-audit",
+  "owner": {"name": "Raúl Hernández Herce"},
+  "plugins": [
+    {"name": "claude-token-audit", "source": "./", "description": "Audita el consumo de tokens de Claude Code y propone cómo ahorrar."}
+  ]
+}
